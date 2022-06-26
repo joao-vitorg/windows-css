@@ -1,0 +1,81 @@
+#zeroFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "0";
+}
+
+#oneFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "1";
+}
+
+#twoFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "2";
+}
+
+#threeFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "3";
+}
+
+#fourFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "4";
+}
+
+#fiveFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "5";
+}
+
+#sixFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "6";
+}
+
+#sevenFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "7";
+}
+
+#eightFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "8";
+}
+
+#nineFirst:checked ~ #calcDisplay #firstDisplay::after {
+  content: "9";
+}
+
+/*==================================================*/
+
+#zeroSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "0";
+}
+
+#oneSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "1";
+}
+
+#twoSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "2";
+}
+
+#threeSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "3";
+}
+
+#fourSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "4";
+}
+
+#fiveSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "5";
+}
+
+#sixSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "6";
+}
+
+#sevenSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "7";
+}
+
+#eightSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "8";
+}
+
+#nineSecond:checked ~ #calcDisplay #secondDisplay::after {
+  content: "9";
+}

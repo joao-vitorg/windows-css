@@ -1,0 +1,14 @@
+body {
+  max-width: 300px;
+}
+
+main {
+  overflow: hidden;
+}
+
+main textarea {
+  width: 100%;
+  min-height: 400px;
+  resize: none;
+  outline: none;
+}

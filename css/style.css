@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+:root {
+	--azul-claro: rgb(17, 155, 233);
+	--azul: rgb(16, 66, 175);
+	--azul-escuro: rgb(36, 93, 219);
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Principal */
+
+main {
+	height: 100%;
+	background-image: url(../assets/images/windows.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main input {
+	display: none;
+}
+
+/* Principal App */
+
+main .app {
+	width: min-content;
+	border: 3px solid var(--azul-escuro);
+	border-radius: 5px;
+}
+
+main .header {
+	background-color: var(--azul-escuro);
+	padding: 5px 3px 8px;
+}
+
+main .appName {
+	width: 100%;
+}
+
+main .appName p {
+	margin: auto 0;
+	color: white;
+}
+
+main .appControls label {
+	font-size: 0;
+	cursor: pointer;
+}
+
+main .appControls img {
+	margin-left: 3px;
+}
+
+main iframe {
+	height: 100%;
+}
+
+/* Rodapé */
+
+footer {
+	background: var(--azul-escuro);
+}
+
+/* Rodapé start */
+
+footer #start img {
+	height: 100%;
+}
+
+/* Rodapé precess */
+
+footer #precess {
+	width: 100%;
+}
+
+footer #precess div {
+	padding: 10px 5px;
+}
+
+/* Rodapé notificação */
+
+footer #notification {
+	padding-left: 5px;
+	background: var(--azul-claro);
+	border-left: 1px solid var(--azul);
+}
+
+footer #notification > * {
+	padding: 10px 5px;
+}
+
+footer #notification img:hover {
+	background-color: black;
+}
+
+footer #notification p {
+	color: white;
+	width: max-content;
+}

@@ -1,0 +1,48 @@
+body {
+  max-width: 300px;
+  height: 300px;
+}
+
+header section p {
+  background-image: url(../images/mine-icon.png);
+  background-size: 20px 20px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(192, 192, 192);
+}
+
+main div {
+  font-size: 0;
+}
+
+main div:first-of-type {
+  float: left;
+}
+
+main div:last-of-type {
+  float: right;
+}
+
+main section::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+table {
+  background-color: darkgray;
+  width: 100%;
+  height: 100%;
+}
+
+main td {
+  background-color: darkgray;
+  border: 3px solid grey;
+  width: 11.11%;
+  height: 11.11%;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<main class="flex">
+			<input type="radio" name="appControl" id="1" />
+			<input type="radio" name="appControl" id="2" />
+			<input type="radio" name="appControl" id="3" />
+
+			<section id="notepad" class="app flex-column">
+				<div class="header flex">
+					<div class="appName flex">
+						<img src="assets/images/229(16x16).png" alt="" />
+						<p>Untitled - Notepad</p>
+					</div>
+
+					<div class="appControls flex">
+						<label for="1">
+							<img src="../../assets/images/minimize.png" alt="" />
+						</label>
+						<label for="2">
+							<img src="../../assets/images/max.png" alt="" />
+						</label>
+						<label for="3">
+							<img src="../../assets/images/close.png" alt="" />
+						</label>
+					</div>
+				</div>
+
+				<iframe src="components/notepad/index.html" frameborder="0"></iframe>
+			</section>
+		</main>
+
+		<footer class="flex">
+			<section id="start" class="flex">
+				<img src="assets/images/start.png" alt="" />
+			</section>
+
+			<section id="precess" class="flex">
+				<div>
+					<p>Notepad</p>
+				</div>
+				<div>
+					<p>Internet Explorer</p>
+				</div>
+				<div>
+					<p>Explorer</p>
+				</div>
+			</section>
+
+			<section id="notification" class="flex">
+				<img src="assets/images/690(16x16).png" alt="" />
+				<img src="assets/images/394(16x16).png" alt="" />
+				<img src="assets/images/229(16x16).png" alt="" />
+				<p>04:20 AM</p>
+			</section>
+		</footer>
+	</body>
+</html>

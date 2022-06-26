@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  max-width: 250px;
+}
+
+input {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 28px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#calcDisplay {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+#firstDisplay::after {
+  padding-right: 10px;
+}
+
+#secondDisplay::after {
+  padding: 0 10px;
+}
+
+#sumDisplay::after {
+  padding-left: 10px;
+}
+
+#numPed {
+  display: flex;
+}
+
+#padFirst,
+#padSecond {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  width: 100%;
+}
+
+.zeroPad {
+  grid-column: 1 / 4;
+}
+
+#plusPad {
+  display: flex;
+  background: orange;
+  align-items: center;
+  padding: 20px;
+  margin-left: 5px;
+}

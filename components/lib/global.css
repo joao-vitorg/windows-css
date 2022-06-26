@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bege: rgb(237, 232, 205);
+  --azul: rgb(16, 66, 175);
+  --azul-escuro: rgb(36, 93, 219);
+}
+
+header nav {
+  display: flex;
+  background-color: var(--bege);
+}
+
+header span {
+  padding: 10px 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+header span:hover {
+  background-color: var(--azul);
+  color: white;
+}
