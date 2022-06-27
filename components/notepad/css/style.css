@@ -21,7 +21,7 @@ input {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 37px;
+    top: 50px;
     left: 1px;
     background: white;
     gap: 5px;
@@ -44,5 +44,15 @@ main textarea {
     resize: none;
     outline: none;
     white-space: nowrap;
-    font-size: 16px;
+    font-size: 50px;
+}
+
+@media only screen and (min-device-width: 812px) {
+    #dropdown {
+        top: 37px;
+    }
+
+    main textarea {
+        font-size: 16px;
+    }
 }

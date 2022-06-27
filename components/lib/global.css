@@ -19,6 +19,11 @@ button {
     all: initial;
 }
 
+button,
+label {
+    font-size: 30px;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -39,4 +44,11 @@ header button:hover,
 header button:focus-within {
     background-color: var(--azul);
     color: white;
+}
+
+@media only screen and (min-device-width: 812px) {
+    button,
+    label {
+        font-size: 16px;
+    }
 }

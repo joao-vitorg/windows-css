@@ -45,6 +45,11 @@ img {
     height: 100%;
 }
 
+p,
+label {
+    font-size: 50px;
+}
+
 /* Principal */
 
 main {
@@ -53,6 +58,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
+    justify-content: center;
 }
 
 /* Principal App */
@@ -66,16 +72,17 @@ main .app {
 main .header {
     background-color: var(--azul-janela);
     padding: 5px 3px 8px;
-    height: 40px;
+    height: 50px;
 }
 
 main .appName {
     width: 100%;
+    align-items: center;
 }
 
 main .appName p {
-    margin: auto 0;
     color: white;
+    font-size: 25px;
 }
 
 main .appControls {
@@ -85,21 +92,33 @@ main .appControls {
 main .appControls label {
     font-size: 0;
     cursor: pointer;
+    height: 100%;
+}
+
+#internet {
+    height: 95%;
+    width: 95%;
 }
 
 #notepad {
-    height: 500px;
+    height: 95%;
+    width: 95%;
 }
 
 #calculator {
-    height: 400px;
+    height: 530px;
 }
 
 /* Rodapé */
 
 footer {
     background: var(--azul);
-    height: 33px;
+    height: 100px;
+    font-size: 50px;
+}
+
+footer img {
+    height: 50px;
 }
 
 /* Rodapé start */
@@ -108,7 +127,8 @@ footer #start {
     position: relative;
 }
 
-footer #start button {
+footer #start button,
+footer #start img {
     height: 100%;
 }
 
@@ -128,14 +148,14 @@ footer #menu:hover {
 footer #menu {
     position: absolute;
     display: none;
-    bottom: 33px;
+    bottom: 100px;
     left: 0;
     border: 3px solid var(--azul-janela);
     border-radius: 5px;
 }
 
 footer #menu img {
-    height: 32px;
+    height: 50px;
 }
 
 footer #avatar {
@@ -147,19 +167,18 @@ footer #avatar {
 
 footer #avatar p {
     color: white;
-    font-size: 20px;
     font-weight: bold;
 }
 
 footer #avatar img {
-    height: 50px;
+    height: 100px;
     border: 2px solid white;
     border-radius: 5px;
 }
 
 footer #menuColumns > div {
     gap: 10px;
-    width: 200px;
+    width: 450px;
     padding: 10px;
 }
 
@@ -222,7 +241,7 @@ footer #process label {
     display: none;
     padding: 5px;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: var(--azul-claro);
     width: 200px;
     cursor: pointer;
@@ -249,7 +268,7 @@ footer #notification {
 
 footer #notification img {
     cursor: pointer;
-    height: 22px;
+    display: none;
 }
 
 footer #notification p {
