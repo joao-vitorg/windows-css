@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bege: #ece9d8;
+    --azul: #225ad9;
+}
+
+html,
+body,
+main {
+    height: 100%;
+}
+
+button {
+    all: initial;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main nav {
+    background-color: var(--bege);
+}
+
+main button {
+    padding: 10px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+main button:hover,
+main button:focus-within {
+    background-color: var(--azul);
+    color: white;
+}

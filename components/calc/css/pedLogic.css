@@ -1,23 +1,23 @@
 #firstDisplay {
-  color: lightcoral;
+    color: lightcoral;
 }
 
 #padSecond {
-  display: none;
+    display: none;
 }
 
 #switchPad:checked ~ #numPed #padFirst {
-  display: none;
+    display: none;
 }
 
 #switchPad:checked ~ #numPed #padSecond {
-  display: grid;
+    display: grid;
 }
 
 #switchPad:checked ~ #calcDisplay #firstDisplay::after {
-  color: black;
+    color: black;
 }
 
 #switchPad:checked ~ #calcDisplay #secondDisplay::after {
-  color: lightcoral;
+    color: lightcoral;
 }

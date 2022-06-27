@@ -1,120 +1,240 @@
 * {
-	margin: 0;
-	box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html,
 body {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 :root {
-	--azul-claro: rgb(17, 155, 233);
-	--azul: rgb(16, 66, 175);
-	--azul-escuro: rgb(36, 93, 219);
+    --azul-janela: #0055ea;
+    --azul: #225ad9;
+    --azul-claro: #3980f4;
+    --azul-notification: #1188e5;
 }
 
 .flex {
-	display: flex;
+    display: flex;
 }
 
 .flex-column {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    display: none;
+}
+
+iframe {
+    height: 100%;
+}
+
+button {
+    all: initial;
 }
 
 /* Principal */
 
 main {
-	height: 100%;
-	background-image: url(../assets/images/windows.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-main input {
-	display: none;
+    height: 100%;
+    background-image: url(../images/windows.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
 }
 
 /* Principal App */
 
 main .app {
-	width: min-content;
-	border: 3px solid var(--azul-escuro);
-	border-radius: 5px;
+    border: 3px solid var(--azul-janela);
+    border-radius: 5px;
 }
 
 main .header {
-	background-color: var(--azul-escuro);
-	padding: 5px 3px 8px;
+    background-color: var(--azul-janela);
+    padding: 5px 3px 8px;
 }
 
 main .appName {
-	width: 100%;
+    width: 100%;
 }
 
 main .appName p {
-	margin: auto 0;
-	color: white;
+    margin: auto 0;
+    color: white;
 }
 
 main .appControls label {
-	font-size: 0;
-	cursor: pointer;
+    font-size: 0;
+    cursor: pointer;
 }
 
 main .appControls img {
-	margin-left: 3px;
+    margin-left: 3px;
 }
 
-main iframe {
-	height: 100%;
+#notepad {
+    height: 500px;
+}
+
+#calculator {
+    width: 260px;
+    height: 400px;
 }
 
 /* Rodapé */
 
 footer {
-	background: var(--azul-escuro);
+    background: var(--azul);
 }
 
 /* Rodapé start */
 
+footer #start {
+    position: relative;
+}
+
+footer #start button,
 footer #start img {
-	height: 100%;
+    height: 100%;
+}
+
+footer #start button {
+    cursor: pointer;
+    font-size: 0;
+}
+
+footer #start:focus-within #menu {
+    display: block;
+}
+
+footer #menu:hover {
+    display: block;
+}
+
+footer #menu {
+    position: absolute;
+    display: none;
+    bottom: 40px;
+    left: 0;
+    border: 3px solid var(--azul-janela);
+    border-radius: 5px;
+}
+
+footer #avatar {
+    background-color: var(--azul);
+    color: white;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer #menuColumns > div {
+    gap: 10px;
+    width: 200px;
+    padding: 10px;
+}
+
+footer #menuColumns div div {
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    padding: 1px;
+}
+
+footer #menuColumns div div:hover {
+    color: white;
+    background-color: var(--azul);
+}
+
+footer #menuFirstColumn {
+    background-color: white;
+}
+
+footer #menuLastColumn {
+    background-color: #d3e5fa;
+}
+
+footer #allProgrmas {
+    justify-content: center;
+    font-weight: bold;
+}
+
+footer #menuSystem {
+    background-color: var(--azul);
+    justify-content: end;
+    gap: 10px;
+    padding: 10px;
+}
+
+footer #menuSystem div {
+    align-items: center;
+    color: white;
+    gap: 5px;
+    padding: 1px;
+}
+
+footer #menuSystem div:hover {
+    background-color: blue;
+    cursor: pointer;
 }
 
 /* Rodapé precess */
 
-footer #precess {
-	width: 100%;
+footer #process {
+    width: 100%;
+    padding: 0 15px;
+    min-width: 0;
+    gap: 5px;
 }
 
-footer #precess div {
-	padding: 10px 5px;
+footer #process div {
+    padding: 10px 5px;
+    background-color: var(--azul-claro);
+    min-width: 0;
+    width: 200px;
+    cursor: pointer;
+    gap: 3px;
+}
+
+footer #process div:hover {
+    background-color: #55a0ff;
+}
+
+footer #process p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
 }
 
 /* Rodapé notificação */
 
 footer #notification {
-	padding-left: 5px;
-	background: var(--azul-claro);
-	border-left: 1px solid var(--azul);
+    padding-left: 5px;
+    background: var(--azul-notification);
+    border-left: 1px solid var(--azul);
 }
 
 footer #notification > * {
-	padding: 10px 5px;
+    padding: 10px 5px;
 }
 
-footer #notification img:hover {
-	background-color: black;
+footer #notification img {
+    cursor: pointer;
 }
 
 footer #notification p {
-	color: white;
-	width: max-content;
+    color: white;
+    white-space: nowrap;
 }

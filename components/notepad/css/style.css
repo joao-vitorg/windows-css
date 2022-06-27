@@ -1,14 +1,42 @@
-body {
-  max-width: 300px;
+input {
+    display: none;
+}
+
+#dropdownDisplay:focus + #dropdown,
+#dropdown:hover {
+    display: flex;
+}
+
+#dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    left: 1px;
+    background: var(--bege);
+    padding: 5px;
+}
+
+label {
+    padding: 5px 0;
+}
+
+#weight:checked ~ textarea {
+    font-weight: bold;
+}
+
+#italic:checked ~ textarea {
+    font-style: italic;
 }
 
 main {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 main textarea {
-  width: 100%;
-  min-height: 400px;
-  resize: none;
-  outline: none;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    resize: none;
+    outline: none;
 }

@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../lib/global.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <link href="../../css/components.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
 
-  <body>
-    <header>
-      <nav>
-        <span title="File">File</span>
-        <span title="Edit">Edit</span>
-        <span title="View">View</span>
-        <span title="Help">Help</span>
-      </nav>
-    </header>
+    <body>
+        <main>
+            <input id="italic" name="" type="checkbox" />
+            <input id="weight" name="" type="checkbox" />
 
-    <main>
-      <textarea></textarea>
-    </main>
-  </body>
+            <nav>
+                <button id="dropdownDisplay" title="File">File</button>
+                <div id="dropdown">
+                    <label for="weight">font weight</label>
+                    <label for="italic">font italic</label>
+                </div>
+
+                <button title="Edit">Edit</button>
+                <button title="Format">Format</button>
+                <button title="View">View</button>
+                <button title="Help">Help</button>
+            </nav>
+
+            <textarea id="text"></textarea>
+        </main>
+    </body>
 </html>

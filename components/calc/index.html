@@ -1,85 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="../lib/global.css" />
-    <link rel="stylesheet" href="css/displayLogic.css" />
-    <link rel="stylesheet" href="css/sumLogic.css" />
-    <link rel="stylesheet" href="css/pedLogic.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <link href="../../css/components.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/displayLogic.css" rel="stylesheet" />
+        <link href="css/sumLogic.css" rel="stylesheet" />
+        <link href="css/pedLogic.css" rel="stylesheet" />
+    </head>
 
-  <body>
-    <header>
-      <nav>
-        <span title="File">File</span>
-        <span title="Edit">Edit</span>
-        <span title="View">View</span>
-        <span title="Help">Help</span>
-      </nav>
-    </header>
+    <body>
+        <main>
+            <input id="zeroFirst" name="firstNumber" type="radio" />
+            <input id="oneFirst" name="firstNumber" type="radio" />
+            <input id="twoFirst" name="firstNumber" type="radio" />
+            <input id="threeFirst" name="firstNumber" type="radio" />
+            <input id="fourFirst" name="firstNumber" type="radio" />
+            <input id="fiveFirst" name="firstNumber" type="radio" />
+            <input id="sixFirst" name="firstNumber" type="radio" />
+            <input id="sevenFirst" name="firstNumber" type="radio" />
+            <input id="eightFirst" name="firstNumber" type="radio" />
+            <input id="nineFirst" name="firstNumber" type="radio" />
 
-    <main>
-      <input type="radio" name="firstNumber" id="zeroFirst" />
-      <input type="radio" name="firstNumber" id="oneFirst" />
-      <input type="radio" name="firstNumber" id="twoFirst" />
-      <input type="radio" name="firstNumber" id="threeFirst" />
-      <input type="radio" name="firstNumber" id="fourFirst" />
-      <input type="radio" name="firstNumber" id="fiveFirst" />
-      <input type="radio" name="firstNumber" id="sixFirst" />
-      <input type="radio" name="firstNumber" id="sevenFirst" />
-      <input type="radio" name="firstNumber" id="eightFirst" />
-      <input type="radio" name="firstNumber" id="nineFirst" />
+            <input id="zeroSecond" name="secondNumber" type="radio" />
+            <input id="oneSecond" name="secondNumber" type="radio" />
+            <input id="twoSecond" name="secondNumber" type="radio" />
+            <input id="threeSecond" name="secondNumber" type="radio" />
+            <input id="fourSecond" name="secondNumber" type="radio" />
+            <input id="fiveSecond" name="secondNumber" type="radio" />
+            <input id="sixSecond" name="secondNumber" type="radio" />
+            <input id="sevenSecond" name="secondNumber" type="radio" />
+            <input id="eightSecond" name="secondNumber" type="radio" />
+            <input id="nineSecond" name="secondNumber" type="radio" />
 
-      <input type="radio" name="secondNumber" id="zeroSecond" />
-      <input type="radio" name="secondNumber" id="oneSecond" />
-      <input type="radio" name="secondNumber" id="twoSecond" />
-      <input type="radio" name="secondNumber" id="threeSecond" />
-      <input type="radio" name="secondNumber" id="fourSecond" />
-      <input type="radio" name="secondNumber" id="fiveSecond" />
-      <input type="radio" name="secondNumber" id="sixSecond" />
-      <input type="radio" name="secondNumber" id="sevenSecond" />
-      <input type="radio" name="secondNumber" id="eightSecond" />
-      <input type="radio" name="secondNumber" id="nineSecond" />
+            <input id="switchPad" name="numberPad" type="checkbox" />
 
-      <input type="checkbox" name="numberPad" id="switchPad" />
+            <nav>
+                <button title="Edit">Edit</button>
+                <button title="View">View</button>
+                <button title="Help">Help</button>
+            </nav>
 
-      <section id="calcDisplay">
-        <p id="firstDisplay"></p>
-        <p id="secondDisplay">+</p>
-        <p id="sumDisplay">=</p>
-      </section>
+            <section id="calcDisplay">
+                <p id="firstDisplay"></p>
+                <p id="secondDisplay">+</p>
+                <p id="sumDisplay">=</p>
+            </section>
 
-      <section id="numPed">
-        <div id="padFirst">
-          <label for="sevenFirst">7</label>
-          <label for="eightFirst">8</label>
-          <label for="nineFirst">9</label>
-          <label for="fourFirst">4</label>
-          <label for="fiveFirst">5</label>
-          <label for="sixFirst">6</label>
-          <label for="oneFirst">1</label>
-          <label for="twoFirst">2</label>
-          <label for="threeFirst">3</label>
-          <label for="zeroFirst" class="zeroPad">0</label>
-        </div>
+            <section id="numPed">
+                <div id="padFirst">
+                    <label for="sevenFirst">7</label>
+                    <label for="eightFirst">8</label>
+                    <label for="nineFirst">9</label>
+                    <label for="fourFirst">4</label>
+                    <label for="fiveFirst">5</label>
+                    <label for="sixFirst">6</label>
+                    <label for="oneFirst">1</label>
+                    <label for="twoFirst">2</label>
+                    <label for="threeFirst">3</label>
+                    <label class="zeroPad" for="zeroFirst">0</label>
+                </div>
 
-        <div id="padSecond">
-          <label for="sevenSecond">7</label>
-          <label for="eightSecond">8</label>
-          <label for="nineSecond">9</label>
-          <label for="fourSecond">4</label>
-          <label for="fiveSecond">5</label>
-          <label for="sixSecond">6</label>
-          <label for="oneSecond">1</label>
-          <label for="twoSecond">2</label>
-          <label for="threeSecond">3</label>
-          <label for="zeroSecond" class="zeroPad">0</label>
-        </div>
+                <div id="padSecond">
+                    <label for="sevenSecond">7</label>
+                    <label for="eightSecond">8</label>
+                    <label for="nineSecond">9</label>
+                    <label for="fourSecond">4</label>
+                    <label for="fiveSecond">5</label>
+                    <label for="sixSecond">6</label>
+                    <label for="oneSecond">1</label>
+                    <label for="twoSecond">2</label>
+                    <label for="threeSecond">3</label>
+                    <label class="zeroPad" for="zeroSecond">0</label>
+                </div>
 
-        <label for="switchPad" id="plusPad">+</label>
-      </section>
-    </main>
-  </body>
+                <label for="switchPad" id="plusPad">+</label>
+            </section>
+        </main>
+    </body>
 </html>
