@@ -1,0 +1,63 @@
+#notepadMinimize:checked ~ main #notepad {
+    display: none;
+}
+
+#notepadMinimize:checked ~ footer #notepadProcess {
+    display: flex;
+}
+
+#notepadMaximize:checked ~ main #notepad {
+    display: flex;
+}
+
+#notepadMaximize:checked ~ footer #notepadProcess {
+    display: flex;
+}
+
+#notepadClose:checked ~ main #notepad {
+    display: none;
+}
+
+/*------------------------------------------*/
+
+#calculatorMinimize:checked ~ main #calculator {
+    display: none;
+}
+
+#calculatorMinimize:checked ~ footer #calculatorProcess {
+    display: flex;
+}
+
+#calculatorMaximize:checked ~ main #calculator {
+    display: flex;
+}
+
+#calculatorMaximize:checked ~ footer #calculatorProcess {
+    display: flex;
+}
+
+#notepadClose:checked ~ main #notepad {
+    display: none;
+}
+
+/*------------------------------------------*/
+
+#internetMinimize:checked ~ main #internet {
+    display: none;
+}
+
+#internetMinimize:checked ~ footer #internetProcess {
+    display: flex;
+}
+
+#internetMaximize:checked ~ main #internet {
+    display: flex;
+}
+
+#internetMaximize:checked ~ footer #internetProcess {
+    display: flex;
+}
+
+#internetClose:checked ~ main #internet {
+    display: none;
+}

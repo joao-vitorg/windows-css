@@ -41,6 +41,10 @@ button {
     all: initial;
 }
 
+img {
+    height: 100%;
+}
+
 /* Principal */
 
 main {
@@ -56,11 +60,13 @@ main {
 main .app {
     border: 3px solid var(--azul-janela);
     border-radius: 5px;
+    display: none;
 }
 
 main .header {
     background-color: var(--azul-janela);
     padding: 5px 3px 8px;
+    height: 40px;
 }
 
 main .appName {
@@ -72,13 +78,13 @@ main .appName p {
     color: white;
 }
 
+main .appControls {
+    gap: 3px;
+}
+
 main .appControls label {
     font-size: 0;
     cursor: pointer;
-}
-
-main .appControls img {
-    margin-left: 3px;
 }
 
 #notepad {
@@ -86,7 +92,6 @@ main .appControls img {
 }
 
 #calculator {
-    width: 260px;
     height: 400px;
 }
 
@@ -94,6 +99,7 @@ main .appControls img {
 
 footer {
     background: var(--azul);
+    height: 33px;
 }
 
 /* Rodapé start */
@@ -102,8 +108,7 @@ footer #start {
     position: relative;
 }
 
-footer #start button,
-footer #start img {
+footer #start button {
     height: 100%;
 }
 
@@ -123,20 +128,33 @@ footer #menu:hover {
 footer #menu {
     position: absolute;
     display: none;
-    bottom: 40px;
+    bottom: 33px;
     left: 0;
     border: 3px solid var(--azul-janela);
     border-radius: 5px;
 }
 
+footer #menu img {
+    height: 32px;
+}
+
 footer #avatar {
     background-color: var(--azul);
-    color: white;
     padding: 5px;
     gap: 10px;
     align-items: center;
+}
+
+footer #avatar p {
+    color: white;
     font-size: 20px;
     font-weight: bold;
+}
+
+footer #avatar img {
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 footer #menuColumns > div {
@@ -145,14 +163,16 @@ footer #menuColumns > div {
     padding: 10px;
 }
 
-footer #menuColumns div div {
+footer #menuColumns div div,
+footer #menuColumns div label {
     gap: 5px;
     align-items: center;
     cursor: pointer;
     padding: 1px;
 }
 
-footer #menuColumns div div:hover {
+footer #menuColumns div div:hover,
+footer #menuColumns div label:hover {
     color: white;
     background-color: var(--azul);
 }
@@ -165,7 +185,7 @@ footer #menuLastColumn {
     background-color: #d3e5fa;
 }
 
-footer #allProgrmas {
+footer #allPrograms {
     justify-content: center;
     font-weight: bold;
 }
@@ -182,11 +202,11 @@ footer #menuSystem div {
     color: white;
     gap: 5px;
     padding: 1px;
+    cursor: pointer;
 }
 
 footer #menuSystem div:hover {
     background-color: blue;
-    cursor: pointer;
 }
 
 /* Rodapé precess */
@@ -198,40 +218,38 @@ footer #process {
     gap: 5px;
 }
 
-footer #process div {
-    padding: 10px 5px;
+footer #process label {
+    display: none;
+    padding: 5px;
+    align-items: center;
+    gap: 5px;
     background-color: var(--azul-claro);
-    min-width: 0;
     width: 200px;
     cursor: pointer;
-    gap: 3px;
-}
-
-footer #process div:hover {
-    background-color: #55a0ff;
-}
-
-footer #process p {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     color: white;
+
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+footer #process label:hover {
+    background-color: #55a0ff;
 }
 
 /* Rodapé notificação */
 
 footer #notification {
-    padding-left: 5px;
+    align-items: center;
     background: var(--azul-notification);
     border-left: 1px solid var(--azul);
-}
-
-footer #notification > * {
-    padding: 10px 5px;
+    padding: 5px;
+    gap: 5px;
 }
 
 footer #notification img {
     cursor: pointer;
+    height: 22px;
 }
 
 footer #notification p {

@@ -5,29 +5,38 @@
         <title>Document</title>
         <link href="css/font.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
+        <link href="css/displayLogic.css" rel="stylesheet" />
     </head>
 
     <body>
-        <main class="flex">
-            <input id="1" name="appControl" type="radio" />
-            <input id="2" name="appControl" type="radio" />
-            <input id="3" name="appControl" type="radio" />
+        <input id="notepadMinimize" name="notepadControl" type="radio" />
+        <input id="notepadMaximize" name="notepadControl" type="radio" />
+        <input id="notepadClose" name="notepadControl" type="radio" />
 
+        <input id="calculatorMinimize" name="calculatorControl" type="radio" />
+        <input id="calculatorMaximize" name="calculatorControl" type="radio" />
+        <input id="calculatorClose" name="calculatorControl" type="radio" />
+
+        <input id="internetMinimize" name="internetControl" type="radio" />
+        <input id="internetMaximize" name="internetControl" type="radio" />
+        <input id="internetClose" name="internetControl" type="radio" />
+
+        <main class="flex">
             <section class="app flex-column" id="internet">
                 <div class="header flex">
                     <div class="appName flex">
-                        <img alt="" src="images/notepad.png" width="28" />
-                        <p>Untitled - Notepad</p>
+                        <img alt="" src="images/ie.png" />
+                        <p>Internet Explorer - IFTM</p>
                     </div>
 
                     <div class="appControls flex">
-                        <label for="1">
+                        <label for="internetMinimize">
                             <img alt="" src="images/minimize.png" />
                         </label>
-                        <label for="2">
+                        <label for="internetMaximize">
                             <img alt="" src="images/max.png" />
                         </label>
-                        <label for="3">
+                        <label for="internetClose">
                             <img alt="" src="images/close.png" />
                         </label>
                     </div>
@@ -39,18 +48,18 @@
             <section class="app flex-column" id="notepad">
                 <div class="header flex">
                     <div class="appName flex">
-                        <img alt="" src="images/notepad.png" width="28" />
+                        <img alt="" src="images/notepad.png" />
                         <p>Untitled - Notepad</p>
                     </div>
 
                     <div class="appControls flex">
-                        <label for="1">
+                        <label for="notepadMinimize">
                             <img alt="" src="images/minimize.png" />
                         </label>
-                        <label for="2">
+                        <label for="notepadMaximize">
                             <img alt="" src="images/max.png" />
                         </label>
-                        <label for="3">
+                        <label for="notepadClose">
                             <img alt="" src="images/close.png" />
                         </label>
                     </div>
@@ -62,24 +71,24 @@
             <section class="app flex-column" id="calculator">
                 <div class="header flex">
                     <div class="appName flex">
-                        <img alt="" src="images/calculator.png" width="28" />
-                        <p>Untitled - Notepad</p>
+                        <img alt="" src="images/calculator.png" />
+                        <p>Calculator</p>
                     </div>
 
                     <div class="appControls flex">
-                        <label for="1">
+                        <label for="calculatorMinimize">
                             <img alt="" src="images/minimize.png" />
                         </label>
-                        <label for="2">
-                            <img alt="" src="images/max.png" style="filter: grayscale(100%)" />
+                        <label for="calculatorMaximize">
+                            <img alt="" src="images/max.png" style="opacity: 0.4; cursor: default" />
                         </label>
-                        <label for="3">
+                        <label for="calculatorClose">
                             <img alt="" src="images/close.png" />
                         </label>
                     </div>
                 </div>
 
-                <iframe frameborder="0" src="components/calc"></iframe>
+                <iframe frameborder="0" src="components/calculator"></iframe>
             </section>
         </main>
 
@@ -97,75 +106,75 @@
 
                     <div class="flex" id="menuColumns">
                         <div class="flex-column" id="menuFirstColumn">
+                            <label class="flex" for="internetMaximize">
+                                <img alt="" src="images/ie.png" />
+                                Internet
+                            </label>
                             <div class="flex">
-                                <img alt="" src="images/ie.png" width="32" />
-                                <p>Internet</p>
-                            </div>
-                            <div class="flex">
-                                <img alt="" src="images/email.png" width="32" />
+                                <img alt="" src="images/email.png" />
                                 <p>E-mail</p>
                             </div>
                             <hr />
                             <div class="flex">
-                                <img alt="" src="images/msn.png" width="32" />
+                                <img alt="" src="images/msn.png" />
                                 <p>MSN</p>
                             </div>
                             <div class="flex">
-                                <img alt="" src="images/winPlayer.png" width="32" />
+                                <img alt="" src="images/winPlayer.png" />
                                 <p>Windows Media Player</p>
                             </div>
                             <div class="flex">
-                                <img alt="" src="images/messenger.png" width="32" />
+                                <img alt="" src="images/messenger.png" />
                                 <p>Windows Messenger</p>
                             </div>
-                            <div class="flex">
-                                <img alt="" src="images/calculator.png" width="32" />
-                                <p>Calculator</p>
-                            </div>
-                            <div class="flex">
-                                <img alt="" src="images/notepad.png" width="32" />
-                                <p>Notepad</p>
-                            </div>
+                            <label class="flex" for="calculatorMaximize">
+                                <img alt="" src="images/calculator.png" />
+                                Calculator
+                            </label>
+                            <label class="flex" for="notepadMaximize">
+                                <img alt="" src="images/notepad.png" />
+                                Notepad
+                            </label>
                             <hr />
                             <div class="flex" id="allPrograms">
                                 <p>All Programs</p>
-                                <img alt="" src="images/run.ico" width="22" />
+                                <img alt="" src="images/run.ico" />
                             </div>
                         </div>
 
                         <div class="flex-column" id="menuLastColumn">
                             <div class="flex">
-                                <img alt="" src="images/documents.png" width="32" />
+                                <img alt="" src="images/documents.png" />
                                 <p>My Documents</p>
                             </div>
                             <div class="flex">
-                                <img alt="" src="images/pictures.png" width="32" />
+                                <img alt="" src="images/pictures.png" />
                                 <p>My Pictures</p>
                             </div>
                             <div class="flex">
-                                <img alt="" src="images/musics.png" width="32" />
+                                <img alt="" src="images/musics.png" />
                                 <p>My Music</p>
                             </div>
                             <div class="flex">
-                                <img alt="" src="images/computer.png" width="32" />
+                                <img alt="" src="images/computer.png" />
                                 <p>My Computer</p>
                             </div>
                             <hr />
                             <div class="flex">
-                                <img alt="" src="images/controlPanel.png" width="32" />
+                                <img alt="" src="images/controlPanel.png" />
                                 <p>Control Panel</p>
                             </div>
                             <hr />
                             <div class="flex">
-                                <img alt="" src="images/help.png" width="32" />
+                                <img alt="" src="images/help.png" />
                                 <p>Help</p>
                             </div>
                             <div class="flex">
-                                <img alt="" src="images/search.png" width="32" />
+                                <img alt="" src="images/search.png" />
                                 <p>Search</p>
                             </div>
                             <div class="flex">
-                                <img alt="" src="images/run.png" width="32" />
+                                <img alt="" src="images/run.png" />
                                 <p>Run...</p>
                             </div>
                         </div>
@@ -187,18 +196,18 @@
             </section>
 
             <section class="flex" id="process">
-                <div class="flex" title="Notepad">
-                    <img alt="" src="images/notepad.png" width="20px" />
-                    <p>Notepad</p>
-                </div>
-                <div class="flex" title="Calculator">
-                    <img alt="" src="images/calculator.png" width="20px" />
-                    <p>Calculator</p>
-                </div>
-                <div class="flex" title="Internet Explorer">
-                    <img alt="" src="images/ie.png" width="20px" />
-                    <p>Internet Explorer</p>
-                </div>
+                <label for="internetMaximize" id="internetProcess" title="Internet Explorer">
+                    <img alt="" src="images/ie.png" />
+                    Internet Explorer
+                </label>
+                <label for="calculatorMaximize" id="calculatorProcess" title="Calculator">
+                    <img alt="" src="images/calculator.png" />
+                    Calculator
+                </label>
+                <label for="notepadMaximize" id="notepadProcess" title="Notepad">
+                    <img alt="" src="images/notepad.png" />
+                    Notepad
+                </label>
             </section>
 
             <section class="flex" id="notification">
