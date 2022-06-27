@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Document</title>
-        <link href="../../css/components.css" rel="stylesheet" />
+        <link href="../../css/font.css" rel="stylesheet" />
+        <link href="../lib/global.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/displayLogic.css" rel="stylesheet" />
         <link href="css/sumLogic.css" rel="stylesheet" />
@@ -11,8 +12,16 @@
     </head>
 
     <body>
+        <header>
+            <nav>
+                <button title="Edit">Edit</button>
+                <button title="View">View</button>
+                <button title="Help">Help</button>
+            </nav>
+        </header>
+
         <main>
-            <input id="zeroFirst" name="firstNumber" type="radio" />
+            <input checked id="zeroFirst" name="firstNumber" type="radio" />
             <input id="oneFirst" name="firstNumber" type="radio" />
             <input id="twoFirst" name="firstNumber" type="radio" />
             <input id="threeFirst" name="firstNumber" type="radio" />
@@ -23,7 +32,7 @@
             <input id="eightFirst" name="firstNumber" type="radio" />
             <input id="nineFirst" name="firstNumber" type="radio" />
 
-            <input id="zeroSecond" name="secondNumber" type="radio" />
+            <input checked id="zeroSecond" name="secondNumber" type="radio" />
             <input id="oneSecond" name="secondNumber" type="radio" />
             <input id="twoSecond" name="secondNumber" type="radio" />
             <input id="threeSecond" name="secondNumber" type="radio" />
@@ -35,12 +44,6 @@
             <input id="nineSecond" name="secondNumber" type="radio" />
 
             <input id="switchPad" name="numberPad" type="checkbox" />
-
-            <nav>
-                <button title="Edit">Edit</button>
-                <button title="View">View</button>
-                <button title="Help">Help</button>
-            </nav>
 
             <section id="calcDisplay">
                 <p id="firstDisplay"></p>

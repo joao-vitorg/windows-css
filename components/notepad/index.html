@@ -3,20 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <title>Document</title>
-        <link href="../../css/components.css" rel="stylesheet" />
+        <link href="../../css/font.css" rel="stylesheet" />
+        <link href="../lib/global.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
+        <link href="css/logic.css" rel="stylesheet" />
     </head>
 
     <body>
-        <main>
-            <input id="italic" name="" type="checkbox" />
-            <input id="weight" name="" type="checkbox" />
-
+        <header>
             <nav>
                 <button id="dropdownDisplay" title="File">File</button>
                 <div id="dropdown">
-                    <label for="weight">font weight</label>
-                    <label for="italic">font italic</label>
+                    <label for="bold">Bold</label>
+                    <label for="italic">Italic</label>
+                    <label for="underline">Underline</label>
+                    <hr />
+                    <label for="size">Font Size</label>
+                    <label for="wrap">Text wrap</label>
+                    <hr />
+                    <label for="black">Black Theme</label>
                 </div>
 
                 <button title="Edit">Edit</button>
@@ -24,6 +29,15 @@
                 <button title="View">View</button>
                 <button title="Help">Help</button>
             </nav>
+        </header>
+
+        <main>
+            <input id="bold" name="" type="checkbox" />
+            <input id="italic" name="" type="checkbox" />
+            <input id="underline" name="" type="checkbox" />
+            <input id="size" name="" type="checkbox" />
+            <input id="wrap" name="" type="checkbox" />
+            <input id="black" name="" type="checkbox" />
 
             <textarea id="text"></textarea>
         </main>

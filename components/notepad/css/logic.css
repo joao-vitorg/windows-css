@@ -1,0 +1,24 @@
+#bold:checked ~ textarea {
+    font-weight: bold;
+}
+
+#italic:checked ~ textarea {
+    font-style: italic;
+}
+
+#underline:checked ~ textarea {
+    text-decoration: underline;
+}
+
+#size:checked ~ textarea {
+    font-size: 26px;
+}
+
+#wrap:checked ~ textarea {
+    white-space: break-spaces;
+}
+
+#black:checked ~ textarea {
+    background-color: black;
+    color: white;
+}

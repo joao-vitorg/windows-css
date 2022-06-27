@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    overflow: hidden;
+    height: 100%;
+}
+
 input {
     display: none;
 }
@@ -11,26 +21,20 @@ input {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 35px;
+    top: 37px;
     left: 1px;
-    background: var(--bege);
-    padding: 5px;
+    background: white;
+    gap: 5px;
+    border: 1px solid black;
 }
 
 label {
-    padding: 5px 0;
+    padding: 5px 10px;
 }
 
-#weight:checked ~ textarea {
-    font-weight: bold;
-}
-
-#italic:checked ~ textarea {
-    font-style: italic;
-}
-
-main {
-    overflow: hidden;
+label:hover {
+    background-color: var(--azul);
+    color: white;
 }
 
 main textarea {
@@ -39,4 +43,6 @@ main textarea {
     height: 100%;
     resize: none;
     outline: none;
+    white-space: nowrap;
+    font-size: 16px;
 }

@@ -11,8 +11,7 @@
 }
 
 html,
-body,
-main {
+body {
     height: 100%;
 }
 
@@ -25,19 +24,19 @@ main {
     flex-direction: column;
 }
 
-main nav {
+header nav {
     background-color: var(--bege);
 }
 
-main button {
+header button {
     padding: 10px;
     color: black;
     text-align: center;
     cursor: pointer;
 }
 
-main button:hover,
-main button:focus-within {
+header button:hover,
+header button:focus-within {
     background-color: var(--azul);
     color: white;
 }
