@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bege);
+}
+
+main {
+    height: 100%;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+}
+
+p {
+    font-size: 30px;
+}
+
+img {
+    height: 50px;
+}
+
+.vr {
+    border-right: 1px solid gray;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+header > section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+header p:last-of-type {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    width: 500px;
+    overflow: hidden;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-device-width: 812px) {
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        height: 30px;
+    }
+}
