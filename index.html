@@ -6,7 +6,7 @@
         <link href="css/font.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/displayLogic.css" rel="stylesheet" />
-        <link href="css/responsivity.css" rel="stylesheet" />
+        <link href="css/responsive.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -34,7 +34,7 @@
                         <label for="internetMinimize">
                             <img alt="" src="images/minimize.png" />
                         </label>
-                        <label for="internetMaximize">
+                        <label for="notepadMinimize">
                             <img alt="" src="images/max.png" />
                         </label>
                         <label for="internetClose">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
 
-                <iframe frameborder="0" src="components/internet"></iframe>
+                <iframe src="components/internet"></iframe>
             </section>
 
             <section class="app flex-column" id="notepad">
@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="appControls flex">
-                        <label for="notepadMinimize">
+                        <label for="internetMinimize">
                             <img alt="" src="images/minimize.png" />
                         </label>
                         <label for="notepadMaximize">
@@ -66,7 +66,7 @@
                     </div>
                 </div>
 
-                <iframe frameborder="0" src="components/notepad"></iframe>
+                <iframe src="components/notepad"></iframe>
             </section>
 
             <section class="app flex-column" id="calculator">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
 
-                <iframe frameborder="0" src="components/calculator"></iframe>
+                <iframe src="components/calculator"></iframe>
             </section>
         </main>
 
@@ -161,10 +161,10 @@
                                 <p>My Computer</p>
                             </div>
                             <hr />
-                            <div class="flex">
-                                <img alt="" src="images/controlPanel.png" />
-                                <p>Control Panel</p>
-                            </div>
+                            <a class="flex" href="https://github.com/joao-vitorg/windows-css" target="_blank">
+                                <img alt="" src="images/github-logo.png" />
+                                <p>GitHub</p>
+                            </a>
                             <hr />
                             <div class="flex">
                                 <img alt="" src="images/help.png" />
@@ -201,13 +201,13 @@
                     <img alt="" src="images/ie.png" />
                     Internet Explorer
                 </label>
-                <label for="calculatorMaximize" id="calculatorProcess" title="Calculator">
-                    <img alt="" src="images/calculator.png" />
-                    Calculator
-                </label>
                 <label for="notepadMaximize" id="notepadProcess" title="Notepad">
                     <img alt="" src="images/notepad.png" />
                     Notepad
+                </label>
+                <label for="calculatorMaximize" id="calculatorProcess" title="Calculator">
+                    <img alt="" src="images/calculator.png" />
+                    Calculator
                 </label>
             </section>
 
