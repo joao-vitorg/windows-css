@@ -1,21 +1,36 @@
-body {
-    font-family: sans-serif;
-    background-color: var(--bege);
-}
-
-input {
-    display: none;
-}
-
 main {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    min-width: 280px;
+    max-width: 80vw;
+    margin: auto;
+    gap: 10px;
 }
 
-label {
+main #calcDisplay {
+    justify-content: center;
+    background-color: white;
+    font-size: min(15vw, 4em);
+    border: 3px solid black;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+main #numPed,
+main #numPed > div {
+    grid-gap: 5px;
+}
+
+main #numPed > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+main #numPed label {
     padding: 10px;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 2em;
     text-align: center;
     color: blue;
     background-color: #f8f8f6;
@@ -23,58 +38,21 @@ label {
     border-radius: 5px;
 }
 
-label:hover {
+main #numPed label:hover {
     background-color: var(--bege);
 }
 
-#calcDisplay {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    font-size: 50px;
-    border: 3px solid black;
-}
-
-#firstDisplay::after {
-    padding-right: 10px;
-}
-
-#secondDisplay::after {
-    padding: 0 10px;
-}
-
-#sumDisplay::after {
-    padding-left: 10px;
-}
-
-#numPed {
-    display: flex;
-    padding: 5px;
-}
-
-#padFirst,
-#padSecond {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-    width: 100%;
-}
-
-.zeroPad {
+main #numPed .zeroPad {
     grid-column: 1 / 4;
 }
 
-#plusPad {
-    display: flex;
-    background: orange;
+main #numPed #plusPad {
+    background: darkorange;
     align-items: center;
     padding: 20px;
-    margin-left: 5px;
     color: black;
 }
 
-@media only screen and (min-device-width: 812px) {
-    label {
-        font-size: 28px;
-    }
+main #numPed #plusPad:hover {
+    background: orange;
 }

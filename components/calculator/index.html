@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
         <meta charset="UTF-8" />
         <title>Calculator</title>
-        <link href="../../css/font.css" rel="stylesheet" />
-        <link href="../lib/global.css" rel="stylesheet" />
+        <link href="../../global/style.css" rel="stylesheet" />
+        <link href="../../global/component.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/displayLogic.css" rel="stylesheet" />
         <link href="css/sumLogic.css" rel="stylesheet" />
@@ -20,7 +22,7 @@
             </nav>
         </header>
 
-        <main>
+        <main class="flex-column">
             <input checked id="zeroFirst" name="firstNumber" type="radio" />
             <input id="oneFirst" name="firstNumber" type="radio" />
             <input id="twoFirst" name="firstNumber" type="radio" />
@@ -45,13 +47,15 @@
 
             <input id="switchPad" name="numberPad" type="checkbox" />
 
-            <section id="calcDisplay">
+            <section class="flex" id="calcDisplay">
                 <p id="firstDisplay"></p>
-                <p id="secondDisplay">+</p>
-                <p id="sumDisplay">=</p>
+                <p>+</p>
+                <p id="secondDisplay"></p>
+                <p>=</p>
+                <p id="sumDisplay"></p>
             </section>
 
-            <section id="numPed">
+            <section class="flex" id="numPed">
                 <div id="padFirst">
                     <label for="sevenFirst">7</label>
                     <label for="eightFirst">8</label>
@@ -78,7 +82,7 @@
                     <label class="zeroPad" for="zeroSecond">0</label>
                 </div>
 
-                <label for="switchPad" id="plusPad">+</label>
+                <label class="flex" for="switchPad" id="plusPad">+</label>
             </section>
         </main>
     </body>

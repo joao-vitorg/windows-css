@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
         <meta charset="UTF-8" />
         <title>Notepad</title>
-        <link href="../../css/font.css" rel="stylesheet" />
-        <link href="../lib/global.css" rel="stylesheet" />
+        <link href="../../global/style.css" rel="stylesheet" />
+        <link href="../../global/component.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/logic.css" rel="stylesheet" />
     </head>
 
     <body>
-        <header>
+        <header class="flex">
             <nav>
-                <button id="dropdownDisplay" title="File">File</button>
-                <div id="dropdown">
+                <button class="dropdownDisplay" title="File">File</button>
+                <div class="dropdown">
                     <label for="bold">Bold</label>
                     <label for="italic">Italic</label>
                     <label for="underline">Underline</label>
@@ -24,14 +26,14 @@
                     <label for="black">Black Theme</label>
                 </div>
 
-                <button title="Edit">Edit</button>
-                <button title="Format">Format</button>
-                <button title="View">View</button>
+                <button title="Edit">
+                    <label for="text">Edit</label>
+                </button>
                 <button title="Help">Help</button>
             </nav>
         </header>
 
-        <main>
+        <main class="flex-column">
             <input id="bold" name="" type="checkbox" />
             <input id="italic" name="" type="checkbox" />
             <input id="underline" name="" type="checkbox" />

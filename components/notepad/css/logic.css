@@ -11,7 +11,7 @@
 }
 
 #size:checked ~ textarea {
-    font-size: 70px;
+    font-size: 2em;
 }
 
 #wrap:checked ~ textarea {
@@ -21,10 +21,4 @@
 #black:checked ~ textarea {
     background-color: black;
     color: white;
-}
-
-@media only screen and (min-device-width: 812px) {
-    #size:checked ~ textarea {
-        font-size: 26px;
-    }
 }

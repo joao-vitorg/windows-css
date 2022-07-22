@@ -1,58 +1,8 @@
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    overflow: hidden;
-    height: 100%;
-}
-
-input {
-    display: none;
-}
-
-#dropdownDisplay:focus + #dropdown,
-#dropdown:hover {
-    display: flex;
-}
-
-#dropdown {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 1px;
-    background: white;
-    gap: 5px;
-    border: 1px solid black;
-}
-
-label {
-    padding: 5px 10px;
-}
-
-label:hover {
-    background-color: var(--azul);
-    color: white;
-}
-
 main textarea {
     width: 100%;
-    min-height: 400px;
     height: 100%;
     resize: none;
     outline: none;
     white-space: nowrap;
-    font-size: 50px;
-}
-
-@media only screen and (min-device-width: 812px) {
-    #dropdown {
-        top: 37px;
-    }
-
-    main textarea {
-        font-size: 16px;
-    }
+    font-size: 1.5em;
 }

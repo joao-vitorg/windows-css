@@ -1,23 +1,23 @@
-#firstDisplay {
+main #calcDisplay #firstDisplay {
     color: lightcoral;
 }
 
-#padSecond {
+main #numPed #padSecond {
     display: none;
 }
 
-#switchPad:checked ~ #numPed #padFirst {
+main #switchPad:checked ~ #numPed #padFirst {
     display: none;
 }
 
-#switchPad:checked ~ #numPed #padSecond {
+main #switchPad:checked ~ #numPed #padSecond {
     display: grid;
 }
 
-#switchPad:checked ~ #calcDisplay #firstDisplay::after {
+main #switchPad:checked ~ #calcDisplay #firstDisplay::after {
     color: black;
 }
 
-#switchPad:checked ~ #calcDisplay #secondDisplay::after {
+main #switchPad:checked ~ #calcDisplay #secondDisplay::after {
     color: lightcoral;
 }

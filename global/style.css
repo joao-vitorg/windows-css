@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+*,
+*:before,
+*:after,
+*:placeholder-shown {
+    font-family: inherit;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-janela: #0055ea;
+    --azul: #225ad9;
+    --azul-claro: #3980f4;
+    --azul-notification: #1188e5;
+    --bege: #ece9d8;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Noto Sans TC", sans-serif;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 100%;
+}
+
+input {
+    display: none;
+}
+
+button {
+    all: initial;
+    cursor: pointer;
+}
+
+img {
+    height: 100%;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
