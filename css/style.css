@@ -185,6 +185,7 @@ footer #process label {
     width: 200px;
     cursor: pointer;
     color: white;
+    display: none;
 
     overflow: hidden;
     white-space: nowrap;
